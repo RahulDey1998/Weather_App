@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <style>
-        body{
-            background: #333;
-        }
-
-        .clock{
-            font-size: 4em;
-            text-align: center;
-            color: yellow;
-            margin: 200px auto;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .clock span 
-        {
-            padding: 20px;
-            background: #444;
-        }
-    </style>
-    
-
-
 </head>
 <body>
-     
-    <div class="clock">
+    
+    <div class="container my-2 mx-auto">
+       <h1 class="text-muted text-center my-2">Weather App</h1>
 
+       <form class="change-location my-2 text-center text-muted">
+           <label for="city">Enter a locatoin for weather information</label>
+           <input type="text" name="city" class="form-control p-4">
+        </form>
+
+        <div class="card shadow-lg rounded d-none">
+            <img src="https://via.placeholder.com/250" class="time card-image-top">
+            <div class="icon bg-light mx-auto text-center">
+                <!-- icon  -->
+                <img src="" alt="">
+            </div>   
+            <div class="text-muted text-uppercase text-center details">
+                <h2 class="my-2">City Name</h2>
+                <div class="my-2">Weather Condition</div>
+                <div class="display-3 my-2">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="./app.js"></script>
-    
+
+    <script src="./script/app.js"></script>
+    <script src="./script/forecast.js"></script>
 </body>
 </html>
