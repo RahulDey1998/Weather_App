@@ -1,41 +1,42 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Ninja Weather</title>
 </head>
 <body>
-    
+
     <div class="container my-2 mx-auto">
-       <h1 class="text-muted text-center my-2">Weather App</h1>
 
-       <form class="change-location my-2 text-center text-muted">
-           <label for="city">Enter a locatoin for weather information</label>
-           <input type="text" name="city" class="form-control p-4">
+        <h1 class="text-muted text-center my-2">Weather Ninja</h1>
+    
+        <form class="change-location my-2 text-center text-muted">
+          <label for="city">Enter a location for weather information</label>
+          <input type="text" name="city" class="form-control p-3">
         </form>
-
+        
         <div class="card shadow-lg rounded d-none">
-            <img src="https://via.placeholder.com/250" class="time card-image-top">
-            <div class="icon bg-light mx-auto text-center">
-                <!-- icon  -->
-                <img src="" alt="">
-            </div>   
-            <div class="text-muted text-uppercase text-center details">
-                <h2 class="my-2">City Name</h2>
-                <div class="my-2">Weather Condition</div>
-                <div class="display-3 my-2">
-                    <span>temp</span>
-                    <span>&deg;C</span>
-                </div>
+          <img src="https://via.placeholder.com/300x200" class="time card-img-top">
+          <div class="icon bg-light mx-auto text-center">
+            <!-- icon here later -->
+            <img src="" alt="">
+          </div>
+          <div class="text-muted text-uppercase text-center details">
+            <h5 class="my-2">City name</h5>
+            <div class="my-2">Weather condition</div>
+            <div class="display-2 my-2">
+              <span>temp</span>
+              <span>&deg;C</span>
             </div>
+          </div>
         </div>
-    </div>
-
-
-    <script src="./script/app.js"></script>
-    <script src="./script/forecast.js"></script>
+        
+      </div> 
+  
+  <script src="script/forecast_class.js"></script>
+  <script src="script/app_class.js"></script>
 </body>
 </html>
